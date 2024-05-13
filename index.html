@@ -1,13 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>First code</h1>
-    <h2>second</h2>
-    <h1>third</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+          <body>
+            <form id="form">
+            <div class="form-group">
+              <div class="row">
+               <div class="col-md-4" >
+               <label for="firstname"><b>Name<span class="main">*</span></b></label>
+                <input
+              type="text"
+              name=""
+              class="form-control"
+              id="firstname"
+              aria-describedby="fname"
+               />
+                <small id="fname" class="form-text text-muted">First</small>
+                </div>
+
+                <div class="col-md-4" >
+               <label for="lastname" style="color: white;">LastName</label>
+                <input
+              type="text"
+              name=""
+              class="form-control"
+              id="lastname"
+              aria-describedby="lname"
+               />
+              <small id="lname" class="form-text text-muted">Last</small>
+                </div>
+          
+               </div>
+               </div>
+
+                  <div class="form-group">
+                 <div class="row">
+                    <div class="col-8" >
+                   <label for="exampleInputEmail1"><b>Email<span class="main">*</span></b></label>
+               <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div>
+</div>
+          </div>
+          
+            <div class="form-group">
+        <div class="row">
+          <div class="col-md" >
+            <label for="feed" ><b>Your Experience<span class="main">*</span></label></b><br />
+                <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+                <t>Overall,how would you rate your experience with us?</t>
+                </div>
+            
+               </div>
+               </div>
+
+
+               <div class="form-group">
+                <div class="row">
+                   <div class="col-sm" >
+                <h6><b>How satisfied are you with <span class="main">*</span></label></b></h6>
+                   <div class="table-responsive-sm">
+                    <table class="table table-striped">
+              
+  <thead>
+    <div>
+    <tr style="text-align: center;" >
+      <td scope="col" ></td>
+      <td scope="col">Very Unsatisfied</td>
+      <td scope="col">Unsatisfied</td>
+      <td scope="col">Neutral</td>
+        <td scope="col">Satisfied</td>
+            <td scope="col">Very Satisfied</td>
+    </tr>
+    </div>
+  </thead>
+  <tbody>
+    <tr style="text-align: center;">
+      <td style="text-align: left;">Purchase</td>
+      <td><input type="radio" name="purchase" id="" ></td>
+      <td><input type="radio" name="purchase" id="" ></td>
+      <td><input type="radio" name="purchase" id="" ></td>
+      <td><input type="radio" name="purchase" id="" ></td>
+      <td><input type="radio" name="purchase" id="" ></td>
+    </tr>
+    <tr style="text-align: center;">
+      <td style="text-align: left;">Service</td>
+      <td><input type="radio" name="service" id="" ></td>
+      <td><input type="radio" name="service" id="" ></td>
+      <td><input type="radio" name="service" id="" ></td>
+      <td><input type="radio" name="service" id="" ></td>
+      <td><input type="radio" name="service" id="" ></td>
+    </tr>
+    <tr style="text-align: center;">
+      
+      <td style="text-align: left;">Company Overall</td>
+      <td><input type="radio" name="company" id="" ></td>
+      <td><input type="radio" name="company" id="" ></td>
+      <td><input type="radio" name="company" id="" ></td>
+      <td><input type="radio" name="company" id="" ></td>
+      <td><input type="radio" name="company" id="" ></td>
+      
+      
+      
+    </tr>
+  </tbody>
+</table>
+                </div> 
+                </div>
+               </div>
+            </div>
+
+
+             <div class="form-group">
+                <div class="row">
+                   <div class="col-sm" >
+                <h6><b>How likely are you to <span class="main">*</span></b></h6>
+                   <div class="table-responsive-sm">
+                    <table class="table table-striped">
+              
+  <thead>
+    <div class="trow">
+    <tr style="text-align: center;" >
+      <td scope="col" ></td>
+      <td scope="col">Very Unlikely</td>
+      <td scope="col">Unlikely</td>
+      <td scope="col">Neutral</td>
+        <td scope="col">Likely</td>
+            <td scope="col">Very Likely</td>
+    </tr>
+    </div>
+  </thead>
+  <tbody>
+    <tr style="text-align: center;">
+      <td style="text-align: left;">Buy from us again</td>
+      <td><input type="radio" name="purchase" id="" ></td>
+      <td><input type="radio" name="purchase" id="" ></td>
+      <td><input type="radio" name="purchase" id="" ></td>
+      <td><input type="radio" name="purchase" id="" ></td>
+      <td><input type="radio" name="purchase" id="" ></td>
+    </tr>
+    <tr style="text-align: center;">
+      <td style="text-align: left;">Recommend our<br>product to others</td>
+      <td><input type="radio" name="service" id="" ></td>
+      <td><input type="radio" name="service" id="" ></td>
+      <td><input type="radio" name="service" id="" ></td>
+      <td><input type="radio" name="service" id="" ></td>
+      <td><input type="radio" name="service" id="" ></td>
+    </tr>
+    <tr style="text-align: center;">
+      
+      <td style="text-align: left;">Recommend our<br>company to others</td>
+      <td><input type="radio" name="company" id="" ></td>
+      <td><input type="radio" name="company" id="" ></td>
+      <td><input type="radio" name="company" id="" ></td>
+      <td><input type="radio" name="company" id="" ></td>
+      <td><input type="radio" name="company" id="" ></td>
+      
+      
+      
+    </tr>
+  </tbody>
+</table>
+                </div> 
+                </div>
+               </div>
+            </div>
+
+
+            </div>
+
+            <div class="form-group">
+    <label for="exampleFormControlTextarea1"><b>Additional comments or suggestions</b></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-light">Submit</button>
+      </div>
+    </form>
+  </body>
 </html>
